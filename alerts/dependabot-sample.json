@@ -1,0 +1,29 @@
+{
+  "source": "dependabot",
+  "repository": "appsec-agent-workshop/demo-api",
+  "alert_number": 1042,
+  "state": "open",
+  "severity": "high",
+  "package": {
+    "ecosystem": "npm",
+    "name": "example-template-engine",
+    "direct": false,
+    "manifest_path": "services/web/package-lock.json"
+  },
+  "advisory": {
+    "ghsa_id": "GHSA-demo-1234-5678",
+    "cve_id": "CVE-2026-0001",
+    "summary": "Server-side template injection in example-template-engine",
+    "vulnerable_versions": "< 4.2.1",
+    "patched_versions": ">= 4.2.1"
+  },
+  "detected_at": "2026-05-18T09:21:00Z",
+  "known_context": {
+    "dependency_update_pr": "not_opened",
+    "tests": "unit tests exist for services/web, integration tests unknown",
+    "owner": "web-platform",
+    "production_exposure": "unknown",
+    "codeql_status": "last successful run 9 days ago",
+    "prior_related_alerts": "six alerts for the same package family across three services"
+  }
+}
