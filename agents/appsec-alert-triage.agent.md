@@ -18,7 +18,8 @@ You must not dismiss alerts, reduce severity, accept risk, or claim final exploi
 2. Identify the alert source: Dependabot or CodeQL.
 3. Extract deterministic facts.
 4. Search for repository context only when available in the workspace.
-5. Draft a report with evidence, missing evidence, confidence, and a human next action.
+5. Treat stale, missing, or timed-out CodeQL as missing evidence that caps confidence.
+6. Draft a report with evidence, missing evidence, confidence, and a human next action.
 
 ## TODO
 
@@ -26,6 +27,7 @@ Add your personal review preferences:
 
 - Which alerts do you inspect first?
 - Which missing facts should cap confidence?
+- How should stale CodeQL, missing tests, and unknown runtime exposure affect confidence?
 - When should a finding become a campaign candidate?
 - What should always be escalated to a human?
 

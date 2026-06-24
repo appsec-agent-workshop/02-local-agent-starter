@@ -21,6 +21,8 @@ prompts/run-local-agent.md
 2. Ask the agent to analyze `alerts/dependabot-sample.json`.
 3. Tighten the agent prompt so it reflects your personal AppSec review preferences.
 
+Your facilitator will confirm the exact local custom-agent path for the workshop environment before this exercise starts. Do not guess a path if your app or CLI uses a different location.
+
 ## Prompt
 
 See `prompts/run-local-agent.md`.
@@ -29,5 +31,6 @@ See `prompts/run-local-agent.md`.
 
 - The local agent separates facts from assumptions.
 - The report lists missing evidence.
+- Stale, missing, or timed-out CodeQL is treated as missing evidence, not as low risk.
 - The recommendation uses one approved route.
 - Human approval remains required.

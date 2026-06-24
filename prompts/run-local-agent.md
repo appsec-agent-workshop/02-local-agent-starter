@@ -10,6 +10,7 @@ Produce a recommendation for a human AppSec reviewer.
 Requirements:
 - separate facts from assumptions
 - list missing evidence
+- treat stale, missing, or timed-out CodeQL as missing evidence that caps confidence
 - choose one route: fix-now, campaign-candidate, needs-reachability-analysis, needs-codeql-timeout-investigation, or human-escalation
 - do not propose automatic dismissal, severity reduction, or risk acceptance
 ```
