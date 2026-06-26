@@ -17,11 +17,11 @@ prompts/run-local-agent.md
 
 ## Exercise
 
-1. Copy `agents/appsec-alert-triage.agent.md` to the local custom-agent path for your delivery environment.
+1. Copy `agents/appsec-alert-triage.agent.md` to the custom-agent location for your tool.
 2. Ask the agent to analyze `alerts/dependabot-sample.json`.
 3. Tighten the agent prompt so it reflects your personal AppSec review preferences.
 
-Your facilitator will confirm the exact local custom-agent path for the workshop environment before this exercise starts. Do not guess a path if your app or CLI uses a different location.
+Your facilitator will confirm the exact local custom-agent path for the workshop environment before this exercise starts. If your environment does not support local custom-agent installation, keep the file in this repository and paste `prompts/run-local-agent.md` into Copilot with `agents/appsec-alert-triage.agent.md` open as context.
 
 ## Prompt
 
