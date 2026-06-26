@@ -17,11 +17,11 @@ prompts/run-local-agent.md
 
 ## Exercise
 
-1. Copy `agents/appsec-alert-triage.agent.md` to the custom-agent location for your tool.
-2. Ask the agent to analyze `alerts/dependabot-sample.json`.
-3. Tighten the agent prompt so it reflects your personal AppSec review preferences.
+If you know the local custom-agent path for your tool, copy `agents/appsec-alert-triage.agent.md` there. If you do not know the path or your environment does not support local custom-agent installation, skip installation and paste `prompts/run-local-agent.md` into Copilot with `agents/appsec-alert-triage.agent.md` open as context.
 
-Your facilitator will confirm the exact local custom-agent path for the workshop environment before this exercise starts. If your environment does not support local custom-agent installation, keep the file in this repository and paste `prompts/run-local-agent.md` into Copilot with `agents/appsec-alert-triage.agent.md` open as context.
+1. Load the agent by installation or by the fallback above.
+2. Ask it to analyze `alerts/dependabot-sample.json`.
+3. Tighten the agent prompt so it reflects your personal AppSec review preferences.
 
 ## Prompt
 
@@ -31,6 +31,5 @@ See `prompts/run-local-agent.md`.
 
 - The local agent separates facts from assumptions.
 - The report lists missing evidence.
-- Stale, missing, or timed-out CodeQL is treated as missing evidence, not as low risk.
-- The recommendation uses one approved route.
+- The recommendation uses one route: `fix-now`, `campaign-candidate`, `needs-reachability-analysis`, `needs-codeql-timeout-investigation`, or `human-escalation`.
 - Human approval remains required.
